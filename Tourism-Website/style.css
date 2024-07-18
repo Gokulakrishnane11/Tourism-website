@@ -1,12 +1,12 @@
 
 /* Global */
-*,
+ *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-}
+} 
 
 body,
 html {
@@ -71,7 +71,7 @@ body {
   display: flex;
   list-style: none;
   gap: 50px;
-  margin-left: 29%;
+  margin-left: 25%;
 }
 
 .nav-links li {
@@ -576,7 +576,13 @@ body {
   z-index: 1;
   border-radius: 4%;
   backdrop-filter: blur(0.2rem);
+  box-sizing: content-box;
 }
+
+.explore-content .line{
+  margin-bottom: 3%;
+}
+
 .explore-content h1 {
   font-size: 200%;
   font-family: sans-serif;
@@ -586,6 +592,7 @@ body {
 .explore-content p {
   color: white;
   margin-bottom: 3%;
+  line-height: 150%;
 }
 .explore-content button a {
   color: white;
@@ -1356,6 +1363,8 @@ body {
     width: 80%;
   }
   .about-text {
+    align-items: center;
+    justify-content: center;
     width: 90%;
   }
   .contact-us {
